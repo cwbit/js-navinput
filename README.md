@@ -10,7 +10,7 @@ Microsoft's Dynamics Navision (NAV) is an app with a ton of sweet input field sh
 This lib has *no dependencies*, but most of the examples are going to use jQuery to get the elements and attach change listeners to them. Again, not required, just used in the examples.
 
 For a list of input shortcuts we are imitating
-[https://msdn.microsoft.com/en-us/library/hh179519(v=nav.90).aspx]()
+[https://msdn.microsoft.com/en-us/library/hh179519(v=nav.90).aspx](https://msdn.microsoft.com/en-us/library/hh179519(v=nav.90).aspx)
 
 The ACTUAL shortcuts are determined by the *Replacers in the code (you can add/modify your own dynamically, too)
 
@@ -19,6 +19,8 @@ Just add `navinput.js` to your project, and load it with `<script .. >` or equiv
 
 # Usage
 Here are some examples of usage.
+
+CODEPEN (LIVE) : [http://codepen.io/cwbit/pen/wzwwVw](http://codepen.io/cwbit/pen/wzwwVw)
 
 > NOTE : These examples use jQuery to listen for input changes and update the values but it's not required
 
