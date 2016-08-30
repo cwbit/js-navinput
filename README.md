@@ -29,21 +29,23 @@ CODEPEN (LIVE) : [http://codepen.io/cwbit/pen/wzwwVw](http://codepen.io/cwbit/pe
 <input type="text" data-navinput-time placeholder="time"/>
 <input type="text" data-navinput-datetime placeholder="datetime"/>
 <script type="text/javascript">
-   $('input[data-navinput-date]').on('change', function(e){
-     var t = $(this);
-     var o = t.val();
-     t.val(NavInput('date').parse(o));
-   });
-   $('input[data-navinput-time]').on('change', function(e){
-     var t = $(this);
-     var o = t.val();
-     t.val(NavInput()['time'].parse(o));
-   });
-   $('input[data-navinput-datetime]').on('change', function(e){
-      var t = $(this);
-      var o = t.val();
-      t.val(NavInput()['datetime'].parse(o));
-    });
+$('input[data-navinput-date]').on('change', function(e){
+  var t = $(this);
+  var o = t.val();
+  t.val(NavInput('date').parse(o)); //specify type on create
+});
+
+$('input[data-navinput-time]').on('change', function(e){
+  var t = $(this);
+  var o = t.val();
+  t.val(NavInput()['time'].parse(o)); //specify type on use
+});
+
+$('input[data-navinput-datetime]').on('change', function(e){
+  var t = $(this);
+  var o = t.val();
+  t.val(NavInput()['datetime'].parse(o)); //your call
+});
 </script>
 ```
 
