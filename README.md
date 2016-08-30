@@ -28,7 +28,7 @@ CODEPEN (LIVE) : [http://codepen.io/cwbit/pen/wzwwVw](http://codepen.io/cwbit/pe
 <input type="text" data-navinput-date placeholder="date"/>
 <input type="text" data-navinput-time placeholder="time"/>
 <input type="text" data-navinput-datetime placeholder="datetime"/>
-  
+<script type="text/javascript">
    $('input[data-navinput-date]').on('change', function(e){
      var t = $(this);
      var o = t.val();
@@ -44,6 +44,7 @@ CODEPEN (LIVE) : [http://codepen.io/cwbit/pen/wzwwVw](http://codepen.io/cwbit/pe
       var o = t.val();
       t.val(NavInput()['datetime'].parse(o));
     });
+</script>
 ```
 
 Here are some of the data transformations supported out of the box
